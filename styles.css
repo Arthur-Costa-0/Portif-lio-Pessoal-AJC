@@ -1,0 +1,137 @@
+:root {
+  --color-primary: #00C2A0;    /* Pantone 16-5425 TCX */
+  --color-secondary: #223A5E;  /* Pantone 19-3911 TCX */
+  --color-accent: #FFD700;     /* Pantone 12-0650 TCX */
+}
+/*Usei o sitema do site da Pantone para escolher algumas cores*/
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: var(--color-secondary);
+  color: #fff;
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+}
+
+/* Este para o cabeçalho */
+.site-header {
+  background-color: var(--color-primary);
+  padding: 15px 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+}
+
+.site-title {
+  font-size: 2.4rem;
+  margin-right: 30px;
+}
+
+.site-nav a {
+  color: #fff;
+  text-decoration: none;
+  margin: 0 10px;
+  font-weight: 500;
+  transition: color 0.3s;
+}
+
+.site-nav a:hover {
+  color: var(--color-accent);
+}
+
+/* Para o conteúdo geral */
+.site-content {
+  max-width: 900px;
+  margin: auto;
+  padding: 40px 20px;
+}
+
+.site-content h2 {
+  font-size: 2rem;
+  margin-bottom: 15px;
+  color: #fff;
+}
+
+/* Seções com leve destaque de fundo */
+.site-content section {
+  margin-bottom: 60px;
+  padding: 20px;
+  background-color: rgba(255, 255, 255, 0.05);
+  border-radius: 8px;
+}
+
+/* Sobre mim: flex com imagem à direita da capa do meu futuro livro */
+.sobre-me {
+  display: flex;
+  align-items: flex-start;
+  gap: 20px;
+}
+
+.sobre-img {
+  width: 200px;
+  height: auto;
+  object-fit: cover;
+  border: 2px solid var(--color-accent);
+  border-radius: 4px;
+}
+
+/* Portifólio */
+.portfolio-links a {
+  display: inline-block;
+  margin-right: 15px;
+  padding: 8px 12px;
+  background-color: var(--color-primary);
+  color: #fff;
+  text-decoration: none;
+  border-radius: 4px;
+  transition: background-color 0.3s;
+}
+
+.portfolio-links a:hover {
+  background-color: var(--color-accent);
+}
+
+/* Formulário de Contato */
+.contact-form label {
+  display: block;
+  margin-bottom: 5px;
+}
+
+.contact-form input,
+.contact-form textarea {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 15px;
+  border: none;
+  border-radius: 4px;
+  background-color: var(--color-primary);
+  color: #fff;
+}
+
+.contact-form textarea {
+  resize: vertical;
+  min-height: 100px;
+}
+
+.contact-form button {
+  display: inline-block;
+  background-color: var(--color-accent);
+  color: var(--color-secondary);
+  padding: 10px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-weight: bold;
+  transition: opacity 0.3s;
+}
+
+.contact-form button:hover {
+  opacity: 0.9;
+}
